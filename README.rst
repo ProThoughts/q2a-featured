@@ -1,7 +1,5 @@
 ===========================================
-Plugin under dev and may not work!
-
-Question2Answer Featured Questions
+Plugin under dev and may not work! Question2Answer Featured Questions
 ===========================================
 -----------
 Description
