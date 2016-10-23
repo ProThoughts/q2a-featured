@@ -1,0 +1,12 @@
+{
+	"name": "Featured Questions",
+	"uri": "https://github.com/ProThoughts/q2a-featured-question",
+	"description": "Keep featured questions at top of list",
+	"version": "1.1",
+	"date": "2016-10-23",
+	"author": "ProThoughts",
+	"author_uri": "http://prothoughts.com",
+	"license": "GPLv2",
+	"update_uri": "https://raw.githubusercontent.com/ProThoughts/q2a-featured-question/master/metadata.json",
+	"min_q2a": "1.6"
+}
