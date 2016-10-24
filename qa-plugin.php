@@ -19,8 +19,9 @@
                     exit;   
     }               
 
-    qa_register_plugin_module('module', 'qa-featured-question-admin.php', 'qa_featured_admin', 'Featured Questions');
-    qa_register_plugin_layer('qa-featured-question-layer.php', 'Featured Layer');
+    qa_register_plugin_layer('qa-featured-question-layer.php', 'Featured Questions');
+    qa_register_plugin_module('module', 'qa-featured-question-admin.php', 'pt_qa_featured_question_admin', 'Featured Questions');
+
     
 /*                              
     Omit PHP closing tag to help avoid accidental output
