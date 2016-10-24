@@ -6,7 +6,7 @@
 
 		function doctype(){
 			
-			$featured = qa_opt('featured_questions_list');
+			$featured = qa_opt('pt_q2a_featured_questions_list');
 			
 			if($featured && (!$this->request || $this->request=='questions') && !qa_get('sort') && isset($this->content['q_list'])) {
 				$featured = explode(',',$featured);
@@ -30,7 +30,7 @@
 					
 					array_unshift($this->content['q_list']['qs'],$q_item);
 				}
-				$this->featured_questions = count($featured);
+				$this->pt_q2a_featured_questions = count($featured);
 			}
 			qa_html_theme_base::doctype();
 		}
@@ -41,14 +41,14 @@
 		function q_list($q_list) {
 			if(isset($q_list['qs']))
 				foreach ($q_list['qs'] as $idx => $q_item)
-					if($idx < $this->featured_questions)
+					if($idx < $this->pt_q2a_featured_questions)
 						$q_list['qs'][$idx]['classes'] = @$q_list['qs'][$idx]['classes'].' qa-q-list-item-featured';
 					else
 						break;
 			qa_html_theme_base::q_list($q_list);
 		}
 		function head_custom() {
-			$this->output('<style>',qa_opt('featured_question_css'),'</style>');
+			$this->output('<style>',qa_opt('pt_q2a_featured_question_css'),'</style>');
 			qa_html_theme_base::head_custom();
 		}
 
